@@ -1,0 +1,677 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>WaitLess Project Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>WAITLESS</h1>
+								<p>A fully responsive queueing app by <a href="https://html5up.net">TEAM S</a><br />
+								for <a href="http://www.ucalgary.ca/cpsc_info/courses/f20/CPSC481">CPSC 481</a> </p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#stage1">Stage 1</a></li>
+								<li><a href="#stage2">Stage 2</a></li>
+								<li><a href="#stage3">Stage 3</a></li>
+								<li><a href="#stage4">Stage 4</a></li>
+								<li><a href="#stage5">Stage 5</a></li>
+								<li><a href="#Team">Team</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Stage 1 -->
+							<article id="stage1">
+								<h2 class="major">Stage 1</h2>
+								<p>Stage 1 involved brainstorming proposed ideas for our project. We agreed to expand upon three ideas for this deliverable. <a href="#work"></a></p>
+								
+								<!-- First Application Idea -->
+								<br><br>
+								<h2>U of C room Finder</h2>
+
+								<p>A mobile application that by way of visual cues, voice directions, and camera/AR implementation shows the user the route to take toget to the room they were looking for. 
+									We planned for this app to be accessed anywhere around campus. However, for our timeline, a small scale part of campus would've be achievable, such as a handful of rooms. 
+									The idea is to get the initial position of the user’s mobile device. 
+									The main methods we have considered are Wifi Access Points and BLE Beacons. 
+									Once we have received the location of the user, the user will then choose the room that they are looking for through a searchbar in the app. 
+									Once the room is selected, the app will pick one of the pre-defined routes that is in the system that gets the user from their starting location to their final one. 
+									Alternatively, we can implement a shortest path algorithm that determines the the fastest path from one room to another. 
+									This method will need to have a map of the building/campus area implemented in software as well as the following considerations:
+								</p>
+
+									<ul>
+										<li>If location finding was implemented with WAPs, we will have to calculate room position srelative to the WAPs before hand</li>
+										<li>If BLEs are used, beacons can be placed in the rooms so that we know where the rooms are located</li>
+									  </ul>
+
+									  <p>
+										Finally, through the use of on screen visual commands, voice directions, or AR implementations the app will direct the user through the chosen route to the destination that the user picked.
+									</p>
+
+								<span class="image main"><img src="images/uofc_room_finder.png" alt="" /></span>
+								
+
+								<!-- Second Application Idea-->
+								<br><br>
+								<h2>WaitLess</h2>
+								<p>
+									
+									A mobile application that improves on the existing line up app, "QLess". Students can join a ”virtual line” to make the process of meeting with an advisor much easier. 
+									When registering for the first time, students can set their post-secondary institution in order to only show lines that would apply to them. 
+									Additionally students can search for specific queues, or organize them by preset options such as distance and line-size.
+									These queues would have info pages and FAQs that users can easily view and have the option to contact these advisors.
+									When queued, the user's position and estimated wait time are displayed along with directions to the advising location.
+
+								</p>
+
+								<div class="row">
+									<div class="column">
+									  <img src="images/qless.png" alt="Snow" style="width:100%">
+									</div>
+									<div class="column">
+									  <img src="images/qless2.png" alt="Forest" style="width:100%">
+									</div>
+								  </div>
+
+								<!--<span class="image main"><img src="images/qless.png" alt="" /> <img src="images/qless2.png" alt="" /></span>
+
+
+								<span class="image main"><img src="D2L_Mobile_Application.png" alt="" /></span>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<p>asdasdasd</p>
+								-->
+								<!-- Third Application Idea-->
+								<br><br>
+								<h2>D2L Mobile Application</h2>
+								<p>
+									With a D2L mobile application, notifications will be visible on a users phone as if it was a notification from any other app. 
+									This will help students keep track of courses and their updates/information. 
+									Important deadlines such as tests and assignments would be priority notifications and updated course info/material and discussion posts could be tagged as important by course instructors and TA's if they desire. 
+									Students would also have the ability to mute specific notifications, or add more for themselves if they require them. 
+									Class schedules could also be linked to user's D2L accounts to remind them of upcoming classes and tutorials or if they've been cancelled by instructors. 
+									These all would improve the student experience and assist them in course and time management.
+								</p>
+
+								<img src="images/D2L_Mobile_Application.png" alt="" style="width:100%"/>
+								<img src="images/D2L_Mobile_Application2.png" alt="" style="width:100%"/>
+
+								<br><br>
+								<br><br>
+								<h2><a href="#stage2">Continue to Stage 2</a></h2>
+
+							</article>	
+
+
+
+
+
+
+						<!-- Stage 2 -->
+							<article id="stage2">
+								<h2 class="major">Stage 2</h2>
+								<p>In Stage 2 our group chose an idea from the previous stage to further develop as our main project. We agreed upon the WaitLess queue app and provide the basis for this idea in the following.</p>
+
+								<br><br>
+								<h2>Project Description</h2>
+								<p>The WaitLess project idea revolves around improving the virtual academic advising experience for students by refining a virtual line up system.  
+									The current solution, QLess, has problems that will be addressed with our idea while also adding improvements to make lining up virtually easy and convenient. 
+									We expect our system to be used as a mobile application where students can virtually line up for drop-in advising at their university/school.  
+									This system will be used by students and academic advisors that will be conducting these line ups.  
+									The context at which we expect this system will be used under is in an academic environment between student and advisor.  
+									We don't expect the student to use this system daily as advising meetings are infrequent, but we expect the advisors to use this system daily to provide guidance to students.</p>
+								
+								<h3>Stakeholders</h3>
+
+								<ul>
+									<li>University students are the ones who will use this system to line up to get counseling on their degree. Students can be split into two categories:
+										<ul>
+											<li>Students familiar with the existing solution QLess have sufficient experience and background using a virtual advising system. Hence, would be more understanding when using our idea.</li>
+											<li>Students NOT familiar with QLess do not have much experience or background with virtual advising and would need special attention to make our WaitLess solution more welcoming.</li>
+										</ul>
+									</li>
+
+									<li>Academic advisors are individuals who will be using this system to advise students and set up lines.  
+										Advisors are assumed to already have the requirements and experience of conducting virtual advising as well as background knowledge in QLess.
+									</li>
+
+									<li>
+										The University Administration are stakeholders that will want to oversee the our system but will not directly use it.
+									</li>
+								</ul>
+
+
+
+
+
+								<br><br>
+								<h2>User Research</h2>
+
+								<p>
+									With the pre-existing QLess app, we were able to make comparisons and evaluate this product to create initial requirements for our app and make changes we deemed necessary. 
+									We were able to sit down with University of Calgary students to get their feedback on the QLess app, recieve a better idea of the actual application functionality and evaluate their overall user-experience. 
+									We also talked to the parents of one of our teammates to get an idea of solely the design of the app.
+								</p>
+
+								<div>
+									<img src="images/Stage2/screenshot1.PNG" style="width:30%"/>
+									<img src="images/Stage2/user.jpg" style="width:36%"/>
+									<img src="images/Stage2/Screenshot2.PNG" style="width:30%"/>
+								</div>
+
+								<p>The following issues came to light from these discussions:</p>
+								<ul>
+									<li>An "About" label at the top left that provides no valuable information, except a way to get to settings.</li>
+									<li>Can't access settings unless you are on the home page.</li>
+									<li>Constant "refresh" animation covering the first place.</li>
+									<li>Need a more tailored location selector. Being offered places that are nowhere near the user.</li>
+									<li>Difficult to locate academic advisors as a line. Need a student specific menu.</li>
+									<li>Multiple UI menus needed for joining a line. Could be simplified to 1.</li>
+									<li>Information is not retained from joining lines in the past.</li>
+									<li>Setting up appointments for a second time asks for the same data to be input which users find extremely time-consuming.</li>
+									<li>The app doesn’t allow re-using previous inquiry messages from the user. Users feel this would help them organize their thoughts and questions for the next meeting.</li>
+								</ul>
+
+								<h3>Flow Analysis</h3>
+								<p>We also drew out the process flow that listed out the steps of putting yourself in an drop-in advising line.</p>
+								<img src="images/Stage2/Putting yourself in the drop in line.png" style="width:100%"/>
+								
+								<br><br>
+								<p>From this diagram we learned the following:</p>
+								<ul>
+									<li>Stripped down the process of getting into a virtual line for academic advising. Identified important tasks, decisions that a student should do in order to get into a line.</li>
+									<li>Determined alternative endpoints/end-goals for the lining up process. These alternative end goals keep students needing short answers out of the line.</li>
+									<li>Introduced possible improvements in the lining up process by having the student submit their question before they get in the line, so the student and advisor can reduce session time and shorten the line.</li>
+								</ul>
+
+								<br><br>
+								<h2>User Tasks</h2>
+								<p>Lastly, we listed user tasks to include in our project.</p>
+
+								<h3>Must Be Included</h3>
+								<ul>
+									<li>The user must be able to log in once and join a queue without going through any additional steps. The process of joining a queue is the main task that the app performs, and going through unimportant steps before joining a queue can cause frustration for the user.</li>
+									<li>The user must be able to search and browse for different queues to join. This task involves the user having an option to freely browse queues and also search for specific queues. This task must be included in our application because it allows for users to find their desired queue quickly.</li>
+									<li>The user must be able to access a FAQ page for queues and/or be able to access a chat system to be able to get information about the queue before joining it. This task is essential because it will allow for a better user experience and also reduce excessive joining and leaving of queues.</li>
+								</ul>
+
+								<h3>Important</h3>
+								<ul>
+									<li>The user should be able to sort the current lists on the screen in a variety of different ways. For example, from our research, we discovered that it is important for the user to sort information how they wish in order to quickly find what they need.</li>
+									<li>The user should be notified by the app on their position in the queue. As they get closer to the front, notifications would become more frequent, however they may could change this setting to meet their need.</li>
+								</ul>
+
+								<h3>Could be Included</h3>
+
+								<ul>
+									<li>The user could access a general "about" page that contains more information about the app. This task could provide a good baseline of information for the user.</li>
+									<li>The user could access a history of queues they've joined in the past. This allows for better communication between the user, application provider, and the queue provider if support is ever needed for the user.</li>
+								</ul>
+
+								<br><br>
+								<br><br>
+								<h2><a href="#stage3">Continue to Stage 3</a></h2>
+
+
+							</article>
+
+						<!-- Stage 3 -->
+							<article id="stage3">
+								<h2 class="major">Stage 3</h2>
+								<p>For Stage 3, we further developed our user tasks, created an affinity diagram, completed a cognitive walkthrough and created sample sketches and visuals for our app. A Low-Fidelity prototype was also created and used in a demo.</p>
+							
+							<h2>User Tasks</h2>
+							<p>
+								We further develop user tasks through horizontal and vertical prototyping. 
+								<br>
+								<u><b>Horizontal prototypes</b></u> are most often used during the early stages of analysis. 
+								They give a broad view of the application including sample screens, menus, buttons, pop-ups and sample reports that reflect the current requirements. 
+								<br>
+								<u><b>Vertical prototypes</b></u> are used in the later stages of analysis and design to drill down and elaborate on specific features or functions.
+							</p>
+
+							<br>
+							<h3>Prototyped Vertically</h3>
+							<ul>
+								<li>The user will be able to search and browse for different queues to join. This task involves the user having an option to freely browse queues and also search for specific queues.</li>
+								<li>The user will be able to access a FAQ page for queues and/or be able to access a chat system to be able to get information about the queue before joining it.</li>
+								<li>The user will be notified by the app on their position in the queue. As they get closer to the front, notifications would become more frequent, however they may change this setting to meet their need.</li>
+							</ul>
+
+							<br><br>
+							<h3>Prototyped Horizontally</h3>
+							<ul>
+								<li>The user will be able to search and browse for different queues to join. This task involves the user having an option to freely browse queues and also search for specific queues.</li>
+								<li>The user will be able to log in once and join a queue without going through any additional steps. The process of joining a queue is the main task that the app performs, and going through unimportant steps before joining a queue can cause frustration for the user.</li>
+								<li>The user will access a general "about" page that contains more information about the app. This task will provide users with a good baseline of information about the functions and purpose of the app.</li>
+								<li>The user will access a history of queues they've joined in the past. This allows for better communication between the user, application provider, and the queue provider if support is ever needed for the user.</li>
+							</ul>
+
+							<h2>Affinity Diagram</h2>
+							<img src="images/Stage3/Picture1.jpg" style="width:100%"/>
+							<img src="images/Stage3/Affinity Diagram no visuals.jpg" style="width:100%"/>
+
+							<br><br>
+							<br><br>
+							<h2>Cognitive Walkthrough</h2>
+							<img src="images/Stage3/tcw1.png" style="width:100%"/>
+							<img src="images/Stage3/tcw2.png" style="width:100%"/>
+							<img src="images/Stage3/tcw3.png" style="width:100%"/>
+
+							<br><br>
+							<br><br>
+							<h2>Low-Fidelity Demo</h2>
+							<iframe width="759" height="500"
+								src="https://www.youtube.com/embed/lW0bRdfHu38" allowfullscreen>
+							</iframe>
+
+
+
+							<br><br>
+							<br><br>
+							<h2><a href="#stage4">Continue to Stage 4</a></h2>
+							
+						
+						</article>
+
+
+
+
+						<!-- Stage 4 -->
+						<article id="stage4">
+							<h2 class="major">Stage 4</h2>
+							<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
+							<p>In Stage 4, we began creating a high-fidelity prototype for our app and conducted a heuristic evaluation on it.</p>
+
+
+							<br><br>
+							<br><br>
+							<h2>High-Fidelity Demo</h2>
+							<iframe width="759" height="500"
+								src="https://www.youtube.com/embed/QjiyX3lR7mA" allowfullscreen>
+							</iframe>
+
+
+							<br><br>
+							<br><br>
+							<h2>Heuristic Evaluation</h2>
+
+							<p>
+								Our evaluation was conducted using Nielsen and Molich’s UIDesign Guidelines. 
+								We split our team into 3 evaluators and 2 reviewers. 
+								Each evaluator independently viewed the application and reported their findings using the guidelines provided. 
+								Each report was then shared with the reviewers and were analyzed to determine problems and their severity.
+							</p>
+
+							<ul>
+								<li>Initially, the high priority issues we encountered all related to traversal of the app. When evaluating early versions of the prototype, many of the buttons in the app did not take users to the correct screen or no screen at all. </li>
+								<li>In regards to problems with a low severity of 1 and 2. They are mostly related to quality of life enhancements. There is a need to recolour different sections and buttons to be less eye straining. This mostly pertains to the faculty logos in the queue search and the help buttons.</li>
+								<li>Moving on to the overall design of the app, when transitioning from the lo-fi prototype to the hi-fi prototype, overall aesthetic and design was vastly improved.</li>
+							</ul>
+
+							<p>
+								Overall, the heuristic evaluation and review process found initial versions of the prototype to have a few areas with high severity issues to address. 
+								After these were dealt with, evaluations of the prototype mainly resulted in the identification of issues with none to low severity mainly relating to quality of life and non-critical usability of the app. 
+								Throughout the entire process, the app required the most attention in the area of error prevention, mainly relating to navigation and accessibility, and required the least attention in the area of matching the system to the real world, which was integrated well in previous stages.					
+							</p>
+
+							<br><br>
+							<br><br>
+							<h2><a href="#stage5">Continue to Stage 5</a></h2>
+						</article>							
+
+
+
+
+						<!-- Stage 5 -->
+							<article id="stage5">
+								<h2 class="major">Stage5</h2>
+								<p>In this final stage, we refined our high-fidelity prototype, conducted a professional demo and wrote a final project report.</p>
+
+								<embed src="images/Stage5/CPSC_481_Project_Iteration5.pdf" width="750px" height="1100px" />
+							</article>
+
+
+						<!-- Team -->
+						<article id="Team">
+							<h2 class="major">Team</h2>
+							<p>
+								Robert MCCURDY
+								<br>
+								Karan PANESAR
+								<br>
+								Evan LOSIER
+								<br>
+								Edmund SAYSON
+								<br>
+								Amman YUSUF
+							</p>
+
+							<h2>A Project for CPSC 481</h2>
+						</article>							
+
+						<!-- Contact page? -->
+						<!--
+							<article id="Contact">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+						-->
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy;  <a href=""></a>TEAM S of CPSC 481 FALL 2020</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+
+			<!-- Old background
+			<div id="bg"></div>
+			-->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
